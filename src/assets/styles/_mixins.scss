@@ -1,0 +1,22 @@
+@use "./variables" as var;
+
+@mixin button(
+	$default: var.$ow-red,
+	$hover: var.$ow-red-hover,
+	$color: var.$neutral-128,
+	$border-color: $default,
+	$border-color-hover: 1px
+) {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1rem 2rem;
+	color: $color;
+	text-transform: uppercase;
+	background: $default;
+	border: 1px solid $border-color;
+	&:hover {
+		background-color: $hover;
+		border-color: $border-color-hover;
+	}
+}

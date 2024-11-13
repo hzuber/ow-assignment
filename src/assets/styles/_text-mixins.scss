@@ -1,0 +1,78 @@
+@use "./text-variables" as text;
+
+@mixin headline-xxl() {
+	font-size: text.$font-1600;
+	line-height: text.$font-1800;
+	font-weight: text.$font-weight-bold;
+}
+
+@mixin headline-xl() {
+	font-size: text.$font-1100;
+	line-height: text.$font-1300;
+	font-weight: text.$font-weight-bold;
+}
+
+@mixin headline-l() {
+	font-size: text.$font-800;
+	line-height: text.$font-1000;
+	font-weight: text.$font-weight-bold;
+}
+
+@mixin headline-m() {
+	font-size: text.$font-600;
+	line-height: text.$font-800;
+	font-weight: text.$font-weight-bold;
+}
+
+@mixin headline-s() {
+	font-size: text.$font-500;
+	line-height: text.$font-600;
+	font-weight: text.$font-weight-bold;
+}
+
+@mixin headline-xs() {
+	font-family: Lato;
+	font-size: text.$font-450;
+	line-height: text.$font-700;
+	font-weight: text.$font-weight-bold;
+}
+
+@mixin headline-xxs() {
+	font-family: Lato;
+	font-size: text.$font-400;
+	line-height: text.$font-700;
+	font-weight: text.$font-weight-bold;
+}
+
+@mixin subhead-l() {
+	font-size: text.$font-550;
+	line-height: text.$font-800;
+	font-weight: text.$font-weight-medium;
+}
+
+@mixin subhead-s() {
+	font-size: text.$font-450;
+	line-height: text.$font-700;
+	font-weight: text.$font-weight-medium;
+}
+
+@mixin body-l() {
+	font-family: Lato;
+	font-size: text.$font-450;
+	line-height: text.$font-700;
+	font-weight: text.$font-weight-regular;
+}
+
+@mixin body-m() {
+	font-family: Lato;
+	font-size: text.$font-400;
+	line-height: text.$font-600;
+	font-weight: text.$font-weight-regular;
+}
+
+@mixin body-s() {
+	font-family: Lato;
+	font-size: text.$font-350;
+	line-height: text.$font-500;
+	font-weight: text.$font-weight-regular;
+}
