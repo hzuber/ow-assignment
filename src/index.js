@@ -1,7 +1,8 @@
 import "./styles.scss";
-import "./components/MyButton.js";
+import { About } from "./sections/AboutSection.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 	const app = document.getElementById("app");
-	app.innerHTML = '<my-button text="Hello" class="btn"></my-button>';
+	const aboutSection = About();
+	app.appendChild(aboutSection);
 });

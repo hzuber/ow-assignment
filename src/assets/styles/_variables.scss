@@ -1,3 +1,5 @@
+@forward "./text-variables.scss";
+
 $neutral-0: #000000;
 $neutral-8: #101010;
 $neutral-16: #202020;
@@ -16,3 +18,22 @@ $neutral-128: #ffffff;
 $ow-red: #d34037;
 $ow-red-hover: #f05c48;
 $ow-gradient: linear-gradient(#ea483b, #ea483b00);
+
+$font-1800: 72px !default;
+$font-1600: 64px !default;
+$font-1300: 52px;
+$font-1100: 44px;
+$font-1000: 40px;
+$font-900: 36px;
+$font-800: 32px;
+$font-700: 28px;
+$font-600: 24px;
+$font-550: 22px;
+$font-500: 20px;
+$font-450: 18px;
+$font-400: 16px;
+$font-350: 14px;
+
+$font-weight-bold: 700 !default;
+$font-weight-medium: 500 !default;
+$font-weight-regular: 400;

@@ -3,7 +3,9 @@ $font-family-brand: "Montserrat";
 $font-family-default: "Lato";
 
 // catch-all
-$font-1600: 64px;
+$font-1800: 72px !default;
+$font-1600: 64px !default;
+$font-1300: 52px;
 $font-1100: 44px;
 $font-1000: 40px;
 $font-900: 36px;
@@ -16,37 +18,10 @@ $font-450: 18px;
 $font-400: 16px;
 $font-350: 14px;
 
-// font-size
-$font-size-1600: 64px;
-$font-size-1100: 44px;
-$font-size-1000: 40px;
-$font-size-900: 36px;
-$font-size-800: 32px;
-$font-size-700: 28px;
-$font-size-600: 24px;
-$font-size-550: 22px;
-$font-size-500: 20px;
-$font-size-450: 18px;
-$font-size-400: 16px;
-$font-size-350: 14px;
-
 // font-weight
-$font-weight-bold: 700;
-$font-weight-medium: 500;
+$font-weight-bold: 700 !default;
+$font-weight-medium: 500 !default;
 $font-weight-regular: 400;
 
-//  line-height
-$font-line-height-1800: 72px;
-$font-line-height-1600: 64px;
-$font-line-height-1300: 52px;
-$font-line-height-1100: 44px;
-$font-line-height-1000: 40px;
-$font-line-height-900: 36px;
-$font-line-height-800: 32px;
-$font-line-height-700: 28px;
-$font-line-height-600: 24px;
-$font-line-height-550: 22px;
-$font-line-height-500: 20px;
-$font-line-height-450: 18px;
-$font-line-height-400: 16px;
-$font-line-height-350: 14px;
+//letter-spacing
+$font-letter-spacing-regular: 1.2px;

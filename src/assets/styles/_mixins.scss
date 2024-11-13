@@ -1,4 +1,5 @@
 @use "./variables" as var;
+@forward "./text-mixins.scss";
 
 @mixin button(
 	$default: var.$ow-red,

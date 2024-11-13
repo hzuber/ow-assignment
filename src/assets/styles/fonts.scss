@@ -1,0 +1,68 @@
+@use "./mixins" as mixin;
+@use "./variables" as var;
+
+body,
+html {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6,
+	a,
+	span {
+		&.underline {
+			text-decoration: underline;
+		}
+		&.uppercase {
+			text-transform: uppercase;
+		}
+		&.headline-xxl {
+			@include mixin.headline-xxl;
+		}
+		&.headline-xl {
+			@include mixin.headline-xl;
+		}
+		&.headline-l {
+			@include mixin.headline-l;
+		}
+		&.headline-m {
+			@include mixin.headline-m;
+		}
+		&.headline-s {
+			@include mixin.headline-s;
+		}
+		&.headline-xs {
+			@include mixin.headline-xs;
+		}
+		&.headline-xxs {
+			@include mixin.headline-xxs;
+		}
+		&.subhead-l {
+			@include mixin.subhead-l;
+		}
+		&.subhead-s {
+			@include mixin.subhead-s;
+		}
+		&.label-l {
+			@include mixin.label-l;
+			&.emphasized {
+				font-weight: var.$font-weight-medium;
+			}
+			&.uppercase {
+				text-transform: uppercase;
+				letter-spacing: var.$font-letter-spacing-regular;
+			}
+		}
+		&.label-s {
+			@include mixin.label-s;
+			&.emphasized {
+				font-weight: var.$font-weight-medium;
+			}
+			&.uppercase {
+				text-transform: uppercase;
+				letter-spacing: var.$font-letter-spacing-regular;
+			}
+		}
+	}
+}
