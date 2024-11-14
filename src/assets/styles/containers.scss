@@ -1,13 +1,28 @@
 @use "./variables" as var;
 #app {
+	section {
+		width: 100%;
+		position: relative;
+		gap: 48px;
+		display: flex;
+		flex-direction: column;
+		padding: 96px 0;
+		@media (max-width: var.$breakpoint-md) {
+			padding: 48px 0px;
+		}
+		&.container {
+			gap: 48px;
+			padding: 96px 20px;
+			@media (max-width: var.$breakpoint-md) {
+				padding: 48px 20px;
+			}
+		}
+	}
 	.container {
 		display: flex;
-		flex-wrap: wrap;
 		gap: 24px;
-		margin: 0 20px;
-		max-width: 1396px;
-		padding: 96px 0;
-		justify-content: center;
+		max-width: 1436px;
+		padding: 0 20px;
 		&.full-width {
 			max-width: 100%;
 		}
@@ -15,6 +30,20 @@
 			width: 100%;
 			display: flex;
 			justify-content: center;
+		}
+	}
+	.video-container {
+		position: relative;
+		width: 100%;
+		padding-top: 56.25%;
+		max-width: 1110px;
+		max-height: 625px;
+		iframe {
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
 		}
 	}
 }

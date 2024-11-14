@@ -19,21 +19,10 @@ $ow-red: #d34037;
 $ow-red-hover: #f05c48;
 $ow-gradient: linear-gradient(#ea483b, #ea483b00);
 
-$font-1800: 72px !default;
-$font-1600: 64px !default;
-$font-1300: 52px;
-$font-1100: 44px;
-$font-1000: 40px;
-$font-900: 36px;
-$font-800: 32px;
-$font-700: 28px;
-$font-600: 24px;
-$font-550: 22px;
-$font-500: 20px;
-$font-450: 18px;
-$font-400: 16px;
-$font-350: 14px;
-
-$font-weight-bold: 700 !default;
-$font-weight-medium: 500 !default;
-$font-weight-regular: 400;
+// media breakpoints
+$breakpoint-xs: 320px; // Extra small devices (e.g., small phones)
+$breakpoint-sm: 640px; // Small devices (e.g., phones)
+$breakpoint-md: 768px; // Medium devices (e.g., tablets)
+$breakpoint-lg: 1024px; // Large devices (e.g., desktops)
+$breakpoint-xl: 1280px; // Extra large devices (e.g., large desktops)
+$breakpoint-xxl: 1536px; // Extra extra large devices (e.g., large monitors)

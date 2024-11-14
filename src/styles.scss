@@ -1,34 +1,22 @@
 @use "./assets/styles/variables" as var;
 @use "./assets/styles/mixins" as mixin;
+@use "./assets/styles/animations.scss";
+@use "./assets/styles/buttons.scss";
 @use "./assets/styles/fonts.scss";
 @use "./assets/styles/containers.scss";
 
 html,
 body {
 	margin: 0;
+	scroll-behavior: smooth;
 	#app {
 		font-family: var.$font-family-brand, var.$font-family-default, sans-serif;
 		display: flex;
+		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		min-height: 100vh;
 		background-color: var.$neutral-0;
 		color: white;
-
-		h1 {
-			@include mixin.headline-xxl;
-		}
-
-		button {
-			@include mixin.button;
-			&--text_link {
-				color: var.$neutral-128;
-				border-bottom: 1px solid var.$neutral-128;
-				&:hover {
-					color: var.$ow-red-hover;
-					border-color: var.$ow-red-hover;
-				}
-			}
-		}
 	}
 }

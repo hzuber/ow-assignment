@@ -1,21 +1,22 @@
 @use "./variables" as var;
+@use "./text-mixins.scss" as textMixin;
 @forward "./text-mixins.scss";
 
 @mixin button(
 	$default: var.$ow-red,
 	$hover: var.$ow-red-hover,
 	$color: var.$neutral-128,
-	$border-color: $default,
-	$border-color-hover: 1px
+	$border-color: var.$ow-red,
+	$border-color-hover: var.$ow-red-hover
 ) {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	padding: 1rem 2rem;
+	padding: 12px 32px;
 	color: $color;
-	text-transform: uppercase;
 	background: $default;
 	border: 1px solid $border-color;
+	transition: all 0.3s ease-in-out;
 	&:hover {
 		background-color: $hover;
 		border-color: $border-color-hover;

@@ -11,6 +11,10 @@ module.exports = {
 	module: {
 		rules: [
 			{
+				test: /\.css$/,
+				use: ["style-loader", "css-loader", "postcss-loader"],
+			},
+			{
 				test: /\.scss$/,
 				use: [
 					"style-loader", // Injects styles into the DOM
@@ -35,6 +39,7 @@ module.exports = {
 	plugins: [
 		new CopyWebpackPlugin({
 			patterns: [
+				{ from: "src/assets/icons", to: "icons" },
 				{ from: "src/assets/images", to: "images" },
 				{ from: "src/assets/animations", to: "animations" },
 			],

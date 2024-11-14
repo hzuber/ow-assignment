@@ -1,0 +1,35 @@
+@use "./variables" as var;
+@use "./mixins" as mixin;
+.btn {
+	@include mixin.button();
+	@include mixin.body-m();
+	&.btn-secondary {
+		@include mixin.button(
+			transparent,
+			var.$ow-red-hover,
+			var.$neutral-128,
+			var.$neutral-128,
+			var.$ow-red-hover
+		);
+		@include mixin.body-m();
+		&.header-btn {
+			padding: 8px 24px;
+			font-weight: var.$font-weight-medium;
+			font-family: var.$font-family-brand;
+		}
+	}
+}
+.btn-arrow {
+	padding: 18px;
+	background: transparent;
+	transition: all 0.3s ease-in-out;
+	display: flex;
+	&:before {
+		content: url("/src/assets/icons/btn-arrow.svg");
+		width: 24px;
+		height: 24px;
+	}
+	&:hover {
+		background-color: var.$neutral-24;
+	}
+}

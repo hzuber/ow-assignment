@@ -10,6 +10,7 @@ html {
 	h5,
 	h6,
 	a,
+	p,
 	span {
 		&.underline {
 			text-decoration: underline;
@@ -19,9 +20,18 @@ html {
 		}
 		&.headline-xxl {
 			@include mixin.headline-xxl;
+			@media (max-width: var.$breakpoint-lg) {
+				@include mixin.headline-xl;
+			}
+			@media (max-width: var.$breakpoint-sm) {
+				@include mixin.headline-l;
+			}
 		}
 		&.headline-xl {
 			@include mixin.headline-xl;
+			@media (max-width: var.$breakpoint-sm) {
+				@include mixin.headline-l;
+			}
 		}
 		&.headline-l {
 			@include mixin.headline-l;
@@ -40,6 +50,9 @@ html {
 		}
 		&.subhead-l {
 			@include mixin.subhead-l;
+			@media (max-width: var.$breakpoint-sm) {
+				@include mixin.subhead-s;
+			}
 		}
 		&.subhead-s {
 			@include mixin.subhead-s;

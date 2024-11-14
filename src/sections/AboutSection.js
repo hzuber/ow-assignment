@@ -1,12 +1,16 @@
 import { LottieCard } from "../components/LottieCard/LottieCard";
-import { SectionHeader } from "./components/sectionHeader";
+import { addLoadinAnimation } from "../utils/loadInAnimation";
+import { SectionHeader } from "../components/SectionHeader";
 
 export function About() {
 	const aboutSection = document.createElement("section");
 	aboutSection.id = "about";
-	aboutSection.className = "container";
-
+	aboutSection.className = "items-center container";
 	aboutSection.appendChild(SectionHeader("About Overwolf"));
+
+	const aboutContainer = document.createElement("div");
+	aboutContainer.className = "gap-6 flex flex-wrap justify-center";
+	aboutSection.appendChild(aboutContainer);
 
 	// Data for each card in the About section
 	const cardData = [
@@ -52,10 +56,10 @@ export function About() {
 		},
 	];
 
-	// Create and append each card
 	cardData.forEach((data) => {
-		const card = LottieCard(data); // Create a new Card component
-		aboutSection.appendChild(card);
+		const card = LottieCard(data);
+		addLoadinAnimation([card]);
+		aboutContainer.appendChild(card);
 	});
 
 	return aboutSection;
