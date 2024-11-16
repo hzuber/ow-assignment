@@ -1,6 +1,7 @@
 @use "./variables" as var;
 #app {
-	section {
+	section,
+	.section {
 		width: 100%;
 		position: relative;
 		gap: 48px;
@@ -23,6 +24,9 @@
 		gap: 24px;
 		max-width: 1436px;
 		padding: 0 20px;
+		&.p-0 {
+			padding: 0;
+		}
 		&.full-width {
 			max-width: 100%;
 		}

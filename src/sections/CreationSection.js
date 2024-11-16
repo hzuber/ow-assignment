@@ -5,7 +5,7 @@ import { IconCard } from "../components/IconCard/IconCard";
 
 export function Creation() {
 	const creationSection = document.createElement("section");
-	creationSection.id = "about";
+	creationSection.id = "creation";
 	creationSection.className = "items-center container";
 	creationSection.appendChild(
 		SectionHeader("Full Suite for App Creation Success")
@@ -15,11 +15,11 @@ export function Creation() {
 	creationContainer.className = "gap-6 flex flex-wrap justify-center";
 	creationSection.appendChild(creationContainer);
 
-	// Data for each card in the About section
 	const cardData = [
 		{
 			id: "dev-sdk",
 			icon: "/icons/tools.svg",
+			iconAnimation: "spin",
 			heading: "Developer SDK",
 			subheading:
 				"Integrate various features such as overlays and real-time alerts",
@@ -27,19 +27,22 @@ export function Creation() {
 		{
 			id: "event-api",
 			icon: "/icons/games.svg",
+			iconAnimation: "matrix",
 			heading: "Game Event API",
 			subheading: "Create apps that respond to in-game actions & events",
 		},
 		{
 			id: "monetization",
 			icon: "/icons/profit.svg",
+			iconAnimation: "bounce",
 			heading: "Monetization Tools",
 			subheading: "Turn your app into revenue through ads & subscriptions",
 		},
 	];
 
-	cardData.forEach((data) => {
+	cardData.forEach((data, i) => {
 		const card = IconCard(data);
+		addLoadinAnimation([card], "loadin", false, i, 300);
 		creationContainer.appendChild(card);
 	});
 

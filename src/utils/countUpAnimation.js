@@ -1,9 +1,7 @@
-//accepts an array of cards
-
 export function countUpAnimation(cards) {
 	const options = {
 		root: null,
-		rootMargin: "0px 0px -10% 0px",
+		rootMargin: "0px 0px -25% 0px",
 		threshold: 0,
 	};
 
@@ -23,7 +21,7 @@ export function countUpAnimation(cards) {
 	function countUp(element, target, suffix) {
 		let current = 0;
 		const increment = target / 100;
-		const duration = 1500; // Animation duration in ms
+		const duration = 1500;
 		const stepTime = duration / (target / increment);
 
 		const timer = setInterval(() => {

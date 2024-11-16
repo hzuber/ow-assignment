@@ -7,21 +7,18 @@ import { Header } from "./components/Header.js";
 import { Stats } from "./sections/StatsSection.js";
 import { Video } from "./sections/VideoSection.js";
 import { Creation } from "./sections/CreationSection.js";
+import { TestimonialsDesktop } from "./sections/TestimonialsSection.js";
+import { Footer } from "./components/Footer.js";
 
 document.addEventListener("DOMContentLoaded", () => {
 	const app = document.getElementById("app");
 
-	const header = Header();
-	const heroSection = Hero();
-	const aboutSection = About();
-	const statsSection = Stats();
-	const videoSection = Video();
-	const creationSection = Creation();
-
-	app.appendChild(header);
-	app.appendChild(heroSection);
-	app.appendChild(aboutSection);
-	app.appendChild(statsSection);
-	app.appendChild(videoSection);
-	app.appendChild(creationSection);
+	app.appendChild(Header());
+	app.appendChild(Hero());
+	app.appendChild(About());
+	app.appendChild(Stats());
+	app.appendChild(Video());
+	app.appendChild(Creation());
+	app.appendChild(TestimonialsDesktop());
+	app.appendChild(Footer());
 });

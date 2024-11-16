@@ -1,6 +1,7 @@
-// src/components/Card.js
 import lottie from "lottie-web";
 import "./LottieCard.scss";
+import { isMobile } from "../../utils/isMobile";
+import { onResize } from "../../utils/onResize";
 
 export function LottieCard({ id, lottieSrc, heading, subheading }) {
 	const card = document.createElement("div");
@@ -14,26 +15,25 @@ export function LottieCard({ id, lottieSrc, heading, subheading }) {
 	</div>
   `;
 
-	const isMobile = window.matchMedia("(max-width: 768px)").matches;
+	const autoPlay = isMobile();
 
 	const animation = lottie.loadAnimation({
 		container: card.querySelector(`#${id}-lottie`),
 		renderer: "svg",
 		loop: true,
-		autoplay: isMobile,
+		autoplay: autoPlay,
 
 		path: lottieSrc,
 	});
 
-	if (!isMobile) {
+	if (!autoPlay) {
 		card.addEventListener("mouseenter", () => animation.play());
 		card.addEventListener("mouseleave", () => animation.stop());
 	}
 
-	window.addEventListener("resize", () => {
-		const isMobile = window.matchMedia("(max-width: 768px)").matches;
-		animation.autoplay = isMobile;
-		if (isMobile) {
+	onResize((autoPlay) => {
+		animation.autoplay = autoPlay;
+		if (autoPlay) {
 			animation.play();
 		} else {
 			animation.stop();

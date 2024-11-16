@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40">
+	<title>tools-svg</title>
+	<defs>
+		<image  width="39" height="38" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACcAAAAmCAMAAABwIXKiAAAAAXNSR0IB2cksfwAAASlQTFRF39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/f39/fHqIrVwAAAGN0Uk5TACU0CTjC9v+oEoqYbp0UmwuCnGSk0p9iAe1hGwPp7zJeHsQxWwrL8azDMw0HgUAuvY0Ppurr9J4Vl+MiIYfoI3HnVCb9KAJ+dydvaCzw/lrzNlNN/PX7O0c5PQa690EE+a1IJsfEtgAAAbFJREFUeJyF0u0rQ1EYAPDzsEkIw9q81Ub2AUNNeYmSDxhlZRL5IP+YDz4orUiUvIW0SKG8lyZCk9BM877Nec65477snt0Pz/Oce3/3Offcc4AILwCI8kKADFQhfRe7LN7JEBH3y/lmKeNVPG/uB3uU+YIxP6TrTG8Ys58xFsKjrjOHach7wNISin9xZ73XuGLs9B2joeSJkCLmym61/cqxlQWuiS2IVnfeijs2pRFuMH/quSraCS/bFUb7uY5Ld1zKh5WnUHOShNVGFcxxRKDuUMvq4Uw+rD6g+2E37auZtfSYF044pO/s/RDct+YdtWuR3nSBvy0Y4DVdR9WFkrXv8twEm/83cb3K3ejY5rk1JmPa89Lpl7oZ14jAdRi2WK7LXyHJXNcyS90bfOg0KZmqX8+6xMyLROB6pU8qaFAzhetblZhrQc3kLsG64lomc3hsGTsNaNm/K2lcErA/54lz5j5KyhLOE+G/1w2zSZnkBsIpGHdemGeD/h89xpw3fY6ztGk9hm44lppRNzLDq/jglD6jbhR8WAzBpIDhvGNRX0rG1kHhSEzMpP83DhNiRn4BUDpvY0ajIGAAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use  href="#img1" x="0" y="1"/>
+</svg>

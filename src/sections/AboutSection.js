@@ -12,7 +12,6 @@ export function About() {
 	aboutContainer.className = "gap-6 flex flex-wrap justify-center";
 	aboutSection.appendChild(aboutContainer);
 
-	// Data for each card in the About section
 	const cardData = [
 		{
 			id: "legendary-apps",
@@ -56,9 +55,9 @@ export function About() {
 		},
 	];
 
-	cardData.forEach((data) => {
+	cardData.forEach((data, i) => {
 		const card = LottieCard(data);
-		addLoadinAnimation([card]);
+		addLoadinAnimation([card], "loadin", false, i, 300);
 		aboutContainer.appendChild(card);
 	});
 

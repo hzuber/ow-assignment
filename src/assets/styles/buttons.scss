@@ -20,7 +20,7 @@
 	}
 }
 .btn-arrow {
-	padding: 18px;
+	padding: 16px;
 	background: transparent;
 	transition: all 0.3s ease-in-out;
 	display: flex;
@@ -29,7 +29,15 @@
 		width: 24px;
 		height: 24px;
 	}
+	&.arrow-up {
+		&:before {
+			transform: rotate(180deg);
+		}
+	}
 	&:hover {
 		background-color: var.$neutral-24;
+		+ .hide-on-hover {
+			opacity: 0;
+		}
 	}
 }

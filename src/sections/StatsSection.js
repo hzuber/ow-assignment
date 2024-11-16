@@ -7,9 +7,13 @@ export function Stats() {
 	statsSection.className = "items-center";
 
 	const statsContainer = document.createElement("div");
-	statsContainer.className =
-		"lg:justify-between justify-center items-start container flex-wrap";
+	statsContainer.className = "container";
 	statsSection.appendChild(statsContainer);
+
+	const statsGrid = document.createElement("div");
+	statsGrid.className =
+		"grid grid-cols-2 gap-12 md:grid-cols-4 md:gap-4 justify-items-center lg:justify-items-start w-full";
+	statsContainer.appendChild(statsGrid);
 
 	const cardData = [
 		{
@@ -40,7 +44,7 @@ export function Stats() {
 
 	cardData.forEach((data) => {
 		const card = NumberCard(data);
-		statsContainer.appendChild(card);
+		statsGrid.appendChild(card);
 		const stat = card.querySelector(".stat");
 		countUpAnimation([stat]);
 	});
