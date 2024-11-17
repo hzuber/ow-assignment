@@ -60,21 +60,21 @@ html {
 		&.label-l {
 			@include mixin.label-l;
 			&.emphasized {
-				font-weight: var.$font-weight-medium;
+				font-weight: var(--font-weight-medium);
 			}
 			&.uppercase {
 				text-transform: uppercase;
-				letter-spacing: var.$font-letter-spacing-regular;
+				letter-spacing: var(--font-letter-spacing-regular);
 			}
 		}
 		&.label-s {
 			@include mixin.label-s;
 			&.emphasized {
-				font-weight: var.$font-weight-medium;
+				font-weight: var(--font-weight-medium);
 			}
 			&.uppercase {
 				text-transform: uppercase;
-				letter-spacing: var.$font-letter-spacing-regular;
+				letter-spacing: var(--font-letter-spacing-regular);
 			}
 		}
 	}

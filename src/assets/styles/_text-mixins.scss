@@ -1,137 +1,137 @@
 @use "./variables" as var;
 
 @mixin headline-xxl {
-	font-size: var.$font-1600;
-	line-height: var.$font-1800;
-	font-weight: var.$font-weight-bold;
+	font-size: var(--font-size-1600);
+	line-height: var(--font-size-1800);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin headline-xl() {
-	font-size: var.$font-1100;
-	line-height: var.$font-1300;
-	font-weight: var.$font-weight-bold;
+	font-size: var(--font-size-1100);
+	line-height: var(--font-size-1300);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin headline-l() {
-	font-size: var.$font-800;
-	line-height: var.$font-1000;
-	font-weight: var.$font-weight-bold;
+	font-size: var(--font-size-800);
+	line-height: var(--font-size-1000);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin headline-m() {
-	font-size: var.$font-600;
-	line-height: var.$font-800;
-	font-weight: var.$font-weight-bold;
+	font-size: var(--font-size-600);
+	line-height: var(--font-size-800);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin headline-s() {
-	font-size: var.$font-500;
-	line-height: var.$font-600;
-	font-weight: var.$font-weight-bold;
+	font-size: var(--font-size-500);
+	line-height: var(--font-size-600);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin headline-xs() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-450;
-	line-height: var.$font-700;
-	font-weight: var.$font-weight-bold;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-450);
+	line-height: var(--font-size-700);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin headline-xxs() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-400;
-	line-height: var.$font-700;
-	font-weight: var.$font-weight-bold;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-400);
+	line-height: var(--font-size-700);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin subhead-l() {
-	font-size: var.$font-550;
-	line-height: var.$font-800;
-	font-weight: var.$font-weight-medium;
+	font-size: var(--font-size-550);
+	line-height: var(--font-size-800);
+	font-weight: var(--font-weight-medium);
 }
 
 @mixin subhead-s() {
-	font-size: var.$font-450;
-	line-height: var.$font-700;
-	font-weight: var.$font-weight-medium;
+	font-size: var(--font-size-450);
+	line-height: var(--font-size-700);
+	font-weight: var(--font-weight-medium);
 }
 
 @mixin body-l() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-450;
-	line-height: var.$font-700;
-	font-weight: var.$font-weight-regular;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-450);
+	line-height: var(--font-size-700);
+	font-weight: var(--font-weight-regular);
 }
 
 @mixin body-m() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-400;
-	line-height: var.$font-600;
-	font-weight: var.$font-weight-regular;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-400);
+	line-height: var(--font-size-600);
+	font-weight: var(--font-weight-regular);
 }
 
 @mixin body-s() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-350;
-	line-height: var.$font-500;
-	font-weight: var.$font-weight-regular;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-350);
+	line-height: var(--font-size-500);
+	font-weight: var(--font-weight-regular);
 }
 
 @mixin body-emphasized-l() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-450;
-	line-height: var.$font-700;
-	font-weight: var.$font-weight-bold;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-450);
+	line-height: var(--font-size-700);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin body-emphasized-m() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-400;
-	line-height: var.$font-600;
-	font-weight: var.$font-weight-bold;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-400);
+	line-height: var(--font-size-600);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin body-emphasized-s() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-350;
-	line-height: var.$font-500;
-	font-weight: var.$font-weight-bold;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-350);
+	line-height: var(--font-size-500);
+	font-weight: var(--font-weight-bold);
 }
 
 @mixin body-url-l() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-450;
-	line-height: var.$font-700;
-	font-weight: var.$font-weight-regular;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-450);
+	line-height: var(--font-size-700);
+	font-weight: var(--font-weight-regular);
 	var-decoration: underline;
 }
 
 @mixin body-url-m() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-400;
-	line-height: var.$font-600;
-	font-weight: var.$font-weight-regular;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-400);
+	line-height: var(--font-size-600);
+	font-weight: var(--font-weight-regular);
 	var-decoration: underline;
 }
 
 @mixin body-url-s() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-350;
-	line-height: var.$font-500;
-	font-weight: var.$font-weight-regular;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-350);
+	line-height: var(--font-size-500);
+	font-weight: var(--font-weight-regular);
 	var-decoration: underline;
 }
 
 @mixin label-l() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-400;
-	line-height: var.$font-600;
-	font-weight: var.$font-weight-medium;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-400);
+	line-height: var(--font-size-600);
+	font-weight: var(--font-weight-medium);
 }
 
 @mixin label-s() {
-	font-family: var.$font-family-default;
-	font-size: var.$font-350;
-	line-height: var.$font-500;
-	font-weight: var.$font-weight-regular;
+	font-family: var(--font-family-default);
+	font-size: var(--font-size-350);
+	line-height: var(--font-size-500);
+	font-weight: var(--font-weight-regular);
 }

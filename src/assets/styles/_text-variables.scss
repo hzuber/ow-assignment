@@ -1,27 +1,28 @@
-// font-family
-$font-family-brand: "Montserrat";
-$font-family-default: "Lato";
+// // font-family
+// $font-family-brand: var(--font-family-brand);
+// $font-family-default: var(--font-family-default);
 
-// catch-all
-$font-1800: 72px !default;
-$font-1600: 64px !default;
-$font-1300: 52px;
-$font-1100: 44px;
-$font-1000: 40px;
-$font-900: 36px;
-$font-800: 32px;
-$font-700: 28px;
-$font-600: 24px;
-$font-550: 22px;
-$font-500: 20px;
-$font-450: 18px;
-$font-400: 16px;
-$font-350: 14px;
+// // catch-all
+// $font-1800: 72px;
+// $font-1600: 64px;
+// $font-1300: 52px;
+// $font-1100: 44px;
+// $font-1000: 40px;
+// $font-900: 36px;
+// $font-800: 32px;
+// $font-700: var(--font-size-300);
+// $font-600: var(--font-size-300);
+// $font-550: var(--font-size-300);
+// $font-500: var(--font-size-300);
+// $font-450: var(--font-size-300);
+// $font-400: var(--font-size-300);
+// $font-350: var(--font-size-350);
+// $font-size-300:var(--font-size-300);
 
 // font-weight
-$font-weight-bold: 700 !default;
-$font-weight-medium: 500 !default;
-$font-weight-regular: 400;
+// $font-weight-bold: 700;
+// $font-weight-medium: 500;
+// $font-weight-regular: 400;
 
 //letter-spacing
 $font-letter-spacing-regular: 1.2px;

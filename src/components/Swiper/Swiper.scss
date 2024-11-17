@@ -75,7 +75,7 @@
 			top: 0;
 			width: 60px;
 			height: 60px;
-			background: var.$neutral-16;
+			background: var(--color-neutral-16);
 			top: 25%;
 			&:after {
 				content: none;
@@ -93,7 +93,7 @@
 				}
 			}
 			&:hover {
-				background-color: var.$neutral-32;
+				background-color: var(--color-neutral-32);
 			}
 		}
 		@media (max-width: var.$breakpoint-md) {

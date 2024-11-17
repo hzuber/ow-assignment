@@ -1,0 +1,22 @@
+@use "../../assets/styles/variables" as var;
+
+.icon-card {
+	width: 32%;
+	max-width: 32%;
+	min-width: 8rem;
+	padding: 3.5%;
+	@media (max-width: var.$breakpoint-lg) {
+		width: 48%;
+		max-width: 48%;
+	}
+	@media (max-width: var.$breakpoint-md) {
+		width: 100%;
+		max-width: 600px;
+		padding: 48px 24px;
+	}
+	.inner-content {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+	}
+}

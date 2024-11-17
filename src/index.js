@@ -1,4 +1,5 @@
 import "./styles.scss";
+import "./assets/styles/_brand-tokens.scss";
 import "./assets/styles/tailwind.css";
 import "./scripts.js";
 import { About } from "./sections/AboutSection.js";

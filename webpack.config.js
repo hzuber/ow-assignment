@@ -42,6 +42,8 @@ module.exports = {
 				{ from: "src/assets/icons", to: "icons" },
 				{ from: "src/assets/images", to: "images" },
 				{ from: "src/assets/animations", to: "animations" },
+				{ from: "./src/assets/icons/favicon.ico", to: "./" },
+				{ from: "./src/assets/images/meta-sharing-image.png", to: "./" },
 			],
 		}),
 	],

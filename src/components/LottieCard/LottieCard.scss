@@ -3,7 +3,7 @@
 
 .lottie-card {
 	width: 32%;
-	background: var.$neutral-8;
+	background: var(--color-neutral-8);
 
 	&__inner-container {
 		display: flex;
@@ -24,10 +24,7 @@
 	}
 
 	&__subheading {
-		color: var.$neutral-112;
-	}
-	@media (max-width: var.$breakpoint-lg) {
-		width: 45%;
+		color: var(--color-neutral-112);
 	}
 	@media (max-width: var.$breakpoint-lg) {
 		width: 45%;

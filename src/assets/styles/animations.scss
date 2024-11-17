@@ -108,7 +108,7 @@
 
 @keyframes spin {
 	0% {
-		transform: translate(0, 0) rotate(0);
+		transform: translate(0, 0) rotate(-30deg);
 	}
 	5% {
 		transform: translate(0, -0.5em) rotate(-50deg);
@@ -135,12 +135,12 @@
 		transform: translate(4em, -1.5em) rotate(130deg);
 	}
 	70% {
-		transform: translate(6em, -2em) rotate(217deg);
-	}
-	75% {
 		transform: translate(6em, -2em) rotate(220deg);
 	}
+	75% {
+		transform: translate(6em, -2em) rotate(225deg);
+	}
 	100% {
-		transform: translate(0, 0em) rotate(-225deg);
+		transform: translate(0, 0em) rotate(-230deg);
 	}
 }

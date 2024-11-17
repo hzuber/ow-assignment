@@ -3,11 +3,11 @@
 @forward "./text-mixins.scss";
 
 @mixin button(
-	$default: var.$ow-red,
-	$hover: var.$ow-red-hover,
-	$color: var.$neutral-128,
-	$border-color: var.$ow-red,
-	$border-color-hover: var.$ow-red-hover
+	$default: var(--color-brand-ow),
+	$hover: var(--color-hover-brand-ow),
+	$color: var(--color-neutral-128),
+	$border-color: var(--color-brand-ow),
+	$border-color-hover: var(--color-hover-brand-ow)
 ) {
 	display: flex;
 	justify-content: center;

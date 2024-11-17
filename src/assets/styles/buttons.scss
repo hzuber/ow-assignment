@@ -6,16 +6,16 @@
 	&.btn-secondary {
 		@include mixin.button(
 			transparent,
-			var.$ow-red-hover,
-			var.$neutral-128,
-			var.$neutral-128,
-			var.$ow-red-hover
+			var(--color-hover-brand-ow),
+			var(--color-neutral-128),
+			var(--color-neutral-128),
+			var(--color-hover-brand-ow)
 		);
 		@include mixin.body-m();
 		&.header-btn {
 			padding: 8px 24px;
-			font-weight: var.$font-weight-medium;
-			font-family: var.$font-family-brand;
+			font-weight: var(--font-weight-medium);
+			font-family: var(--font-family-brand);
 		}
 	}
 }
@@ -35,7 +35,7 @@
 		}
 	}
 	&:hover {
-		background-color: var.$neutral-24;
+		background-color: var(--color-neutral-24);
 		+ .hide-on-hover {
 			opacity: 0;
 		}
